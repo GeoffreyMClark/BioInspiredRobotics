@@ -4,6 +4,7 @@ import pybullet_data as pd
 import time
 import math
 import tinyik
+import os
 
 # actuator design for individual leg
 leg = tinyik.Actuator([[-.49, .0, 1.9], 'z', [-.62, .0, .0], 'x', [.0, -2.09, .0], 'x', [.0, -1.8, .0]])
@@ -31,6 +32,11 @@ def add_robot():
 	floor = p.loadURDF("plane.urdf")
 	# Generate robot
 	startPos = [0,0,0.5]
+    
+    #below was used to make sure urdf files could be called. if needed then change 
+    #inside '' to what your working directory
+	#os.chdir('working directory')
+    
 	robot = p.loadURDF("mini_cheetah.urdf",startPos) #,flags=p.URDF_USE_SELF_COLLISION|p.URDF_USE_SELF_COLLISION_INCLUDE_PARENT
 	numJoints = p.getNumJoints(robot)
 	for j in range (-1,numJoints):
@@ -57,9 +63,10 @@ def robot_torque_control(robot,torque_ctrl):
 	for j in [1,2,5,6,9,10,13,14]:
 		p.setJointMotorControl2(robot,j,p.TORQUE_CONTROL,force=torque_ctrl[j])
 
-def robot_torque_control2(robot,torque_ctrl):
-    p.setJointMotorControl2(bodyUniqueId=robot,jointIndex=1,controlMode=p.VELOCITY_CONTROL,force=0)
-    p.setJointMotorControl2(bodyUniqueId=robot,jointIndex=1,controlMode=p.TORQUE_CONTROL,force=torque_ctrl)
+#inputs robot id, torque applied to joint, joint number
+def robot_torque_control2(robot,torque_ctrl,j):
+    p.setJointMotorControl2(bodyUniqueId=robot,jointIndex=j,controlMode=p.VELOCITY_CONTROL,force=0)
+    p.setJointMotorControl2(bodyUniqueId=robot,jointIndex=j,controlMode=p.TORQUE_CONTROL,force=torque_ctrl)
 
 def robot_data(robot, robot_state):
 	[location, quaternions] = p.getBasePositionAndOrientation(robot)
@@ -72,12 +79,30 @@ def robot_data(robot, robot_state):
 	robot_state.joint_accs = (robot_state.joint_vels-joint_vels)/500
 	robot_state.joint_vels = joint_vels
 
+#inputs robot id, target angle, joint number, parameters m b k
+def impedance_control(robot, tar, j,m,b,k):
+    #get angle, velocity and acceleration
+	jpos = p.getJointState(robot,j)[0]
+	jvel = p.getJointState(robot,j)[1]
+	jacc = p.getJointState(robot,j)[3]
+    #calculate torque based on previous values then return torque
+	tor = -m*jacc-b*jvel-k*(jpos-tar);
+	return tor
 
-
+    #3 2 5 1 3 3
 
 if __name__ =="__main__":
+    #parameters used for joint 1 and 2, values used were from random testing
+	m1 = 1
+	b1 = 1
+	k1 = 50
+	m2 = 1
+	b2 = .1
+	k2 = 20
 	# initialize world
+	#p.disconnect()
 	p.connect(p.GUI)
+	p.resetDebugVisualizerCamera(0,20,-20,[0,0,0])
 	dt = 1./200.
 
 	# Add robot
@@ -85,25 +110,55 @@ if __name__ =="__main__":
 	robot_state = cheetah_class()
 	goal_state = goal_class()
 	robot_data(robot, robot_state)
-	frc = 0
+    
+	#index for going through tar and inc for incrementing index
+	index = 0
 	inc = 1
-	f = .8
-
+    #create target list of angles ranging from 0 to pi for joint 2
+	tar = np.linspace(0,np.pi,101)
+    
+    #1 front right
+    #5 front left
+    #9 back right
+    #13 back left
+    
+    
 	while(1):
 		# Robot observation
-		frc = frc + inc
-		if(frc == 100):
+        #get current desired value for joint 2 from target list
+		jposd = tar[index]
+        #call impedance function for joints
+		tr1 = impedance_control(robot,-np.pi/4,1,m1,b1,k1)
+		tr2 = impedance_control(robot,-np.pi/4,5,m1,b1,k1)
+		tr3 = impedance_control(robot,-np.pi/4,9,m1,b1,k1)
+		tr4 = impedance_control(robot,-np.pi/4,13,m1,b1,k1)
+
+		tr5 = impedance_control(robot,np.pi/2,2,m2,b2,k2)
+		tr6 = impedance_control(robot,np.pi/2,6,m2,b2,k2)
+		tr7 = impedance_control(robot,np.pi/2,10,m2,b2,k2)
+		tr8 = impedance_control(robot,np.pi/2,14,m2,b2,k2)
+
+        #incrementing index from 0 to 100 then decrementing from 100 to 0
+        #increasing/decreasing by 1 each loop
+		index = index + inc
+		if(index == 100):
 			inc = -1
-			f = -.8
-		elif(frc == -100):
+		elif(index == 0):
 			inc = 1
-			f = .8
 		robot_data(robot, robot_state)
-		print(robot_state.joint_vels[1],"        ",frc)
-		#print(robot_state.position)
 		leg.angles = np.deg2rad([robot_state.joint_angles[0], -robot_state.joint_angles[1], -robot_state.joint_angles[2]])
-		
-		robot_torque_control2(robot, f)
+
+        #call function applying torque tr# to joint given for robot		
+		robot_torque_control2(robot, tr1,1)
+		robot_torque_control2(robot, tr2,5)
+		robot_torque_control2(robot, tr3,9)
+		robot_torque_control2(robot, tr4,13)
+
+		robot_torque_control2(robot, tr5,2)
+		robot_torque_control2(robot, tr6,6)
+		robot_torque_control2(robot, tr7,10)
+		robot_torque_control2(robot, tr8,14)
+
 		# Impediance controller (convert R to P joints)
         
 		# Take simulation steps
