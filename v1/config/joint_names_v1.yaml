@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'RShoulder1', 'RShoulder2', 'RElbow1', 'RElbow2', 'LShoulder1', 'LShoulder2', 'LElbow1', 'LElbow2', 'RHip1', 'RHip2', 'RKnee1', 'RKnee2', 'RAnkle', 'RToe', 'LHip1', 'LHip2', 'LKnee1', 'LKnee2', 'LAnkle', 'LToe', ]

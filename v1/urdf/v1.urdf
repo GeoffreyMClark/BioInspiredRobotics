@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="v1">
+  <link
+    name="Body">
+    <inertial>
+      <origin
+        xyz="0.165830815971687 0.0380999957330949 6.72797849281392E-08"
+        rpy="0 0 0" />
+      <mass
+        value="4.1454834394796" />
+      <inertia
+        ixx="0.0149485429992683"
+        ixy="1.04400709358095E-09"
+        ixz="5.33566489154171E-08"
+        iyy="0.0416904644531089"
+        iyz="2.30763106838074E-09"
+        izz="0.0303553236657052" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/Body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/Body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RUHumerus">
+    <inertial>
+      <origin
+        xyz="0.0226638715405339 0.0229280127898085 7.67309016325157E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0562874211047921" />
+      <inertia
+        ixx="2.5094696848431E-05"
+        ixy="3.57278380464569E-11"
+        ixz="-4.56418354853165E-13"
+        iyy="1.43324436611828E-05"
+        iyz="1.0881827491028E-11"
+        izz="2.96716771999795E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RUHumerus.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RUHumerus.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RShoulder1"
+    type="continuous">
+    <origin
+      xyz="0.27432 -0.121591734569834 0.0381"
+      rpy="-1.83631660924277 0 -1.5707963267949" />
+    <parent
+      link="Body" />
+    <child
+      link="RUHumerus" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="RMHumerus">
+    <inertial>
+      <origin
+        xyz="-4.22335407757046E-08 -0.0366746759237334 9.44407213543386E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.13806574130706" />
+      <inertia
+        ixx="0.000119185945330013"
+        ixy="1.57761488773904E-10"
+        ixz="-5.211921133952E-10"
+        iyy="4.26572560066301E-05"
+        iyz="-1.46348634813437E-10"
+        izz="0.000115574616778859" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RMHumerus.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RMHumerus.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RShoulder2"
+    type="continuous">
+    <origin
+      xyz="0.0226638309978741 0.0435575675675675 0"
+      rpy="0 0 -3.1129739297594" />
+    <parent
+      link="RUHumerus" />
+    <child
+      link="RMHumerus" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RLHumerus">
+    <inertial>
+      <origin
+        xyz="2.85543133304866E-08 -0.0582475228462962 4.6482702686923E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.092440609285167" />
+      <inertia
+        ixx="4.46849534247363E-05"
+        ixy="6.06615906415045E-11"
+        ixz="-9.46341459988581E-13"
+        iyy="2.73751064546632E-05"
+        iyz="1.72687102056161E-11"
+        izz="4.75847421264425E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RLHumerus.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RLHumerus.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RElbow1"
+    type="continuous">
+    <origin
+      xyz="0 -0.0477044130779104 0"
+      rpy="-3.14159265358979 -0.043289072999253 3.14159265358979" />
+    <parent
+      link="RMHumerus" />
+    <child
+      link="RLHumerus" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="RRadius">
+    <inertial>
+      <origin
+        xyz="4.38294955884544E-11 -0.0770237882409021 -8.89791018643393E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.225239465270569" />
+      <inertia
+        ixx="0.00037863278778599"
+        ixy="-1.83800904726174E-13"
+        ixz="4.37907878742897E-10"
+        iyy="5.98927289876566E-05"
+        iyz="1.56117168022901E-13"
+        izz="0.000374806664125142" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RRadius.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RRadius.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RElbow2"
+    type="continuous">
+    <origin
+      xyz="0 -0.0899704517869545 0"
+      rpy="0.613164267402606 0 0" />
+    <parent
+      link="RLHumerus" />
+    <child
+      link="RRadius" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="LUHumerus">
+    <inertial>
+      <origin
+        xyz="-0.0226637917531425 0.0229083624598164 0.000949044840161228"
+        rpy="0 0 0" />
+      <mass
+        value="0.0562874209462877" />
+      <inertia
+        ixx="2.50946971342329E-05"
+        ixy="3.44225514787338E-11"
+        ixz="8.78549099636471E-13"
+        iyy="1.43587223519267E-05"
+        iyz="-6.34367742543897E-07"
+        izz="2.96453989390809E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LUHumerus.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LUHumerus.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LShoulder1"
+    type="continuous">
+    <origin
+      xyz="0.27432 0.121591734569834 0.0381"
+      rpy="-1.59149829481724 0 -1.5707963267949" />
+    <parent
+      link="Body" />
+    <child
+      link="LUHumerus" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="LMHumerus">
+    <inertial>
+      <origin
+        xyz="-2.81219290632073E-08 -0.036674672322355 8.24411738875597E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.138065752290352" />
+      <inertia
+        ixx="0.000119183741695564"
+        ixy="4.02156842586464E-10"
+        ixz="-4.16915283746933E-10"
+        iyy="4.26572879925715E-05"
+        iyz="5.14090928042068E-10"
+        izz="0.000115572862407743" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LMHumerus.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LMHumerus.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LShoulder2"
+    type="continuous">
+    <origin
+      xyz="-0.0226638309978741 0.0435202378384486 0.00180293951314842"
+      rpy="-0.0414007011337932 -0.000517705291545505 3.12909570306687" />
+    <parent
+      link="LUHumerus" />
+    <child
+      link="LMHumerus" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LLHumerus">
+    <inertial>
+      <origin
+        xyz="2.85786028730861E-08 -0.0450896594199109 4.67687891192448E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0924406077669575" />
+      <inertia
+        ixx="4.46849531632785E-05"
+        ixy="6.07145400015674E-11"
+        ixz="-9.56490050144353E-13"
+        iyy="2.73751063952118E-05"
+        iyz="1.7207639599865E-11"
+        izz="4.75847418065544E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LLHumerus.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LLHumerus.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LElbow1"
+    type="continuous">
+    <origin
+      xyz="0 -0.0608622763001231 0"
+      rpy="-3.14159265358979 0.169197756118627 3.14159265358979" />
+    <parent
+      link="LMHumerus" />
+    <child
+      link="LLHumerus" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="LRadius">
+    <inertial>
+      <origin
+        xyz="4.05621666810241E-09 -0.0770237837460942 -3.5850078461408E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.225239496648543" />
+      <inertia
+        ixx="0.00037863283957954"
+        ixy="-2.96468115767509E-11"
+        ixz="4.67970581729415E-10"
+        iyy="5.98927518252643E-05"
+        iyz="3.09957953255468E-11"
+        izz="0.000374806703263811" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LRadius.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LRadius.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LElbow2"
+    type="continuous">
+    <origin
+      xyz="0 -0.0768125885647418 0"
+      rpy="2.6860465798041 0 -3.14159265358979" />
+    <parent
+      link="LLHumerus" />
+    <child
+      link="LRadius" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="RUFemur">
+    <inertial>
+      <origin
+        xyz="0.0226410001063289 0.023417542664385 0.00302914677743"
+        rpy="0 0 0" />
+      <mass
+        value="0.0588371617715196" />
+      <inertia
+        ixx="2.59185388850094E-05"
+        ixy="3.17044359635677E-11"
+        ixz="4.41633839786285E-12"
+        iyy="1.50630139372424E-05"
+        iyz="-1.99313336625419E-06"
+        izz="3.02137026570884E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RUFemur.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RUFemur.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RHip1"
+    type="continuous">
+    <origin
+      xyz="0.03048 -0.0787364118309958 0.0381"
+      rpy="-1.63511592849543 0 -1.5707963267949" />
+    <parent
+      link="Body" />
+    <child
+      link="RUFemur" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="RMFemur">
+    <inertial>
+      <origin
+        xyz="-3.8310422570409E-08 -0.0319328855185674 1.45195778733509E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.123790789571376" />
+      <inertia
+        ixx="9.43360852102308E-05"
+        ixy="4.1926121579768E-10"
+        ixz="-4.28223492879442E-10"
+        iyy="3.76217753862971E-05"
+        iyz="4.68562022108977E-10"
+        izz="9.05552843886019E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RMFemur.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RMFemur.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RHip2"
+    type="continuous">
+    <origin
+      xyz="0.0226409652141426 0.0442211339031965 0.00572015878352808"
+      rpy="-0.128639141191749 0.000126862066806489 -3.1406119141409" />
+    <parent
+      link="RUFemur" />
+    <child
+      link="RMFemur" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RLFemur">
+    <inertial>
+      <origin
+        xyz="2.04594303304662E-08 -0.0258012295570105 3.1558564234091E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0813765923276173" />
+      <inertia
+        ixx="3.40076307193139E-05"
+        ixy="3.63490769503607E-11"
+        ixz="4.71904017315023E-13"
+        iyy="2.49568195228795E-05"
+        iyz="1.02753818997401E-11"
+        izz="3.68818354986045E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RLFemur.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RLFemur.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RKnee1"
+    type="continuous">
+    <origin
+      xyz="0 -0.0686863879849429 0"
+      rpy="0 -0.029939106057863 0" />
+    <parent
+      link="RMFemur" />
+    <child
+      link="RLFemur" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="RTibia">
+    <inertial>
+      <origin
+        xyz="4.50558340636675E-11 -0.0724030307735521 0.00190498722674322"
+        rpy="0 0 0" />
+      <mass
+        value="0.197322267255763" />
+      <inertia
+        ixx="0.000264988204938816"
+        ixy="4.97045611484108E-11"
+        ixz="2.46950944106595E-10"
+        iyy="5.20313533716702E-05"
+        iyz="2.57920005562835E-11"
+        izz="0.000261642194536082" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RTibia.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RTibia.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RKnee2"
+    type="continuous">
+    <origin
+      xyz="0 -0.05 0"
+      rpy="0.471180140436868 0 0" />
+    <parent
+      link="RLFemur" />
+    <child
+      link="RTibia" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="RFoot">
+    <inertial>
+      <origin
+        xyz="0.00431986853763427 8.03364930135331E-10 5.45368680771041E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.0576266868508424" />
+      <inertia
+        ixx="1.0587554758021E-05"
+        ixy="3.88681731206871E-13"
+        ixz="2.19193229932727E-12"
+        iyy="6.33611197358459E-05"
+        iyz="4.25307356128684E-13"
+        izz="5.74408440456763E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RFoot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RFoot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RAnkle"
+    type="continuous">
+    <origin
+      xyz="0 -0.141066763777475 0.00190498731071205"
+      rpy="1.57079632679491 -1.22947386247953 -1.57079632679491" />
+    <parent
+      link="RTibia" />
+    <child
+      link="RFoot" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RToe">
+    <inertial>
+      <origin
+        xyz="0.0152672397539213 -7.8191529917504E-09 4.26344480275453E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0300993542432527" />
+      <inertia
+        ixx="8.31457489914484E-06"
+        ixy="-2.73896285000102E-12"
+        ixz="-9.88684162222799E-12"
+        iyy="1.03832123361461E-05"
+        iyz="8.92994450056277E-12"
+        izz="4.3441455333731E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RToe.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/RToe.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RToe"
+    type="continuous">
+    <origin
+      xyz="0.05000625 0 0"
+      rpy="0 0 0.465479513878318" />
+    <parent
+      link="RFoot" />
+    <child
+      link="RToe" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LUFemur">
+    <inertial>
+      <origin
+        xyz="-0.0226409304617471 0.0231425632084296 0.00468815529254695"
+        rpy="0 0 0" />
+      <mass
+        value="0.0588371617721" />
+      <inertia
+        ixx="2.59185389796043E-05"
+        ixy="3.11607207043831E-11"
+        ixz="6.62549803632018E-12"
+        iyy="1.5422754562691E-05"
+        iyz="-3.04852215556227E-06"
+        izz="2.98539621405395E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LUFemur.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LUFemur.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LHip1"
+    type="continuous">
+    <origin
+      xyz="0.03048 0.0787364118309958 0.0381"
+      rpy="-1.6707324107769 0 -1.5707963267949" />
+    <parent
+      link="Body" />
+    <child
+      link="LUFemur" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="LMFemur">
+    <inertial>
+      <origin
+        xyz="-2.84181964765873E-08 -0.0319328897508341 1.03682656141246E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.123790772350432" />
+      <inertia
+        ixx="9.43360955485908E-05"
+        ixy="4.07934981180214E-10"
+        ixz="-4.23541990077065E-10"
+        iyy="3.76217651067395E-05"
+        iyz="4.88451239901346E-10"
+        izz="9.05552852905412E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LMFemur.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LMFemur.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LHip2"
+    type="continuous">
+    <origin
+      xyz="-0.0226409652141425 0.0437018699604634 0.00885299170630801"
+      rpy="-0.199631486527388 -0.00987173434951005 3.09284097456322" />
+    <parent
+      link="LUFemur" />
+    <child
+      link="LMFemur" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LLFemur">
+    <inertial>
+      <origin
+        xyz="2.09421130159537E-08 -0.0242152467696431 3.14656001948466E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0813765964956518" />
+      <inertia
+        ixx="3.40076316378404E-05"
+        ixy="3.68710863424334E-11"
+        ixz="4.16322897244794E-13"
+        iyy="2.49568204504274E-05"
+        iyz="1.04802542246627E-11"
+        izz="3.68818372856893E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LLFemur.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LLFemur.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LKnee1"
+    type="continuous">
+    <origin
+      xyz="0 -0.0702723715213309 0"
+      rpy="0 -0.21670904669546 0" />
+    <parent
+      link="LMFemur" />
+    <child
+      link="LLFemur" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="LTibia">
+    <inertial>
+      <origin
+        xyz="-4.48363705884969E-09 -0.0709193620395638 0.00131429338007663"
+        rpy="0 0 0" />
+      <mass
+        value="0.197322298421" />
+      <inertia
+        ixx="0.000264988173640006"
+        ixy="2.3881953757953E-11"
+        ixz="4.03074031051339E-10"
+        iyy="5.20314293165493E-05"
+        iyz="-2.59081887887284E-11"
+        izz="0.000261642289125997" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LTibia.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LTibia.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LKnee2"
+    type="continuous">
+    <origin
+      xyz="0 -0.05 0"
+      rpy="0.527580516456534 0 0" />
+    <parent
+      link="LLFemur" />
+    <child
+      link="LTibia" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="LFoot">
+    <inertial>
+      <origin
+        xyz="0.00431986850422776 8.6339502214372E-10 2.15635778677559E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0576266868508424" />
+      <inertia
+        ixx="1.05875546885033E-05"
+        ixy="5.05341442434197E-13"
+        ixz="2.66508364051241E-12"
+        iyy="6.33611196623373E-05"
+        iyz="3.5160662752947E-13"
+        izz="5.74408440522378E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LFoot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LFoot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LAnkle"
+    type="continuous">
+    <origin
+      xyz="0 -0.139583099293917 0.00131428947187286"
+      rpy="-1.5707963267949 -1.48050713192401 1.5707963267949" />
+    <parent
+      link="LTibia" />
+    <child
+      link="LFoot" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="LToe">
+    <inertial>
+      <origin
+        xyz="0.0152672419582862 -1.0188425270119E-08 3.98440763715868E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0300993469546569" />
+      <inertia
+        ixx="8.31457175176003E-06"
+        ixy="-3.86602055408317E-12"
+        ixz="-1.03762554644475E-11"
+        iyy="1.03832101776668E-05"
+        iyz="8.99236020688299E-12"
+        izz="4.34414367218818E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LToe.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://v1/meshes/LToe.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LToe"
+    type="continuous">
+    <origin
+      xyz="0.05000625 0 0"
+      rpy="0 0 0.371183380985709" />
+    <parent
+      link="LFoot" />
+    <child
+      link="LToe" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
