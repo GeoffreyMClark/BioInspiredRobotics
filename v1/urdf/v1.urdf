@@ -8,16 +8,16 @@
     name="Body">
     <inertial>
       <origin
-        xyz="0.165830815971687 0.0380999957330949 6.72797849287521E-08"
+        xyz="0.165830815971687 0.0380999957330949 6.72797849281136E-08"
         rpy="0 0 0" />
       <mass
         value="4.1454834394796" />
       <inertia
         ixx="0.0149485429992683"
-        ixy="1.0440070936048E-09"
-        ixz="5.3356648915208E-08"
+        ixy="1.04400709349348E-09"
+        ixz="5.33566489153261E-08"
         iyy="0.0416904644531089"
-        iyz="2.30763106843912E-09"
+        iyz="2.30763106835205E-09"
         izz="0.0303553236657052" />
     </inertial>
     <visual>
@@ -55,9 +55,9 @@
       <inertia
         ixx="2.50946970925149E-05"
         ixy="3.4486496266809E-11"
-        ixz="-5.34572357071823E-13"
+        ixz="-5.34572357123268E-13"
         iyy="1.43324424769428E-05"
-        iyz="1.14161602737577E-11"
+        iyz="1.14161602736865E-11"
         izz="2.96716786302372E-05" />
     </inertial>
     <visual>
@@ -107,7 +107,7 @@
         value="0.138065758700322" />
       <inertia
         ixx="0.000119183734385309"
-        ixy="4.21016703711818E-10"
+        ixy="4.21016703711105E-10"
         ixz="-4.18291851727919E-10"
         iyy="4.2657289532051E-05"
         iyz="5.06938412517806E-10"
@@ -154,16 +154,16 @@
     name="RLHumerus">
     <inertial>
       <origin
-        xyz="2.85344389228115E-08 0.0453008545995078 -4.65570376695368E-09"
+        xyz="2.85344389228115E-08 0.0453008545995078 -4.65570371144253E-09"
         rpy="0 0 0" />
       <mass
-        value="0.0924406074551833" />
+        value="0.0924406074551832" />
       <inertia
         ixx="4.46849531177572E-05"
-        ixy="-6.06465987997694E-11"
-        ixz="9.51259691128854E-13"
+        ixy="-6.06465987997696E-11"
+        ixz="9.51259690740704E-13"
         iyy="2.73751063103821E-05"
-        iyz="1.71846938492772E-11"
+        iyz="1.71846938484002E-11"
         izz="4.75847417232106E-05" />
     </inertial>
     <visual>
@@ -207,16 +207,16 @@
     name="RRadius">
     <inertial>
       <origin
-        xyz="2.77555756156289E-17 0.0770237882411253 0"
+        xyz="2.77555756156289E-17 0.0770237882411253 -5.55111512312578E-17"
         rpy="0 0 0" />
       <mass
         value="0.225239465270569" />
       <inertia
         ixx="0.000378632787785578"
-        ixy="-6.28657162893483E-20"
-        ixz="-4.37907769765141E-10"
+        ixy="-6.3305156107752E-20"
+        ixz="-4.37907769765193E-10"
         iyy="5.98927289877368E-05"
-        iyz="-2.10013437558746E-19"
+        iyz="-2.09871265964704E-19"
         izz="0.000374806664124816" />
     </inertial>
     <visual>
@@ -260,17 +260,17 @@
     name="RWrist">
     <inertial>
       <origin
-        xyz="-5.54142620678988E-10 -0.0248602017447294 0.000380585345485046"
+        xyz="-1.80499076796181E-09 -0.00813891634217762 0.000367364016287702"
         rpy="0 0 0" />
       <mass
-        value="0.0707291421737036" />
+        value="0.0217142535290293" />
       <inertia
-        ixx="3.33996262874122E-05"
-        ixy="1.02617800920249E-11"
-        ixz="5.97746340244636E-13"
-        iyy="2.90416784477261E-05"
-        iyz="9.11356668310129E-08"
-        izz="1.36590319566293E-05" />
+        ixx="7.75538309862475E-06"
+        ixy="1.02617800954508E-11"
+        ixz="5.97746342751812E-13"
+        iyy="7.35311825881284E-06"
+        iyz="-1.27624632546519E-08"
+        izz="3.22756377894864E-06" />
     </inertial>
     <visual>
       <origin
@@ -313,17 +313,17 @@
     name="RPalm">
     <inertial>
       <origin
-        xyz="4.81852128197957E-08 -0.024433985583326 0.000379905031232308"
+        xyz="0 -0.0177536698905907 0.00010964769997629"
         rpy="0 0 0" />
       <mass
-        value="0.0719515309236498" />
+        value="0.0490148886446744" />
       <inertia
-        ixx="3.41566805408971E-05"
-        ixy="1.67722067856231E-11"
-        ixz="9.50362515799047E-13"
-        iyy="2.98417967548749E-05"
-        iyz="9.07237613733749E-08"
-        izz="1.39955427848438E-05" />
+        ixx="2.56442431887875E-05"
+        ixy="-4.01486163322907E-21"
+        ixz="-4.04520461113371E-21"
+        iyy="2.16885601889133E-05"
+        iyz="1.03898130085659E-07"
+        izz="1.04314681776806E-05" />
     </inertial>
     <visual>
       <origin
@@ -353,7 +353,7 @@
     name="RWrist2"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0 -0.0145142857142857 0.000276794871794883"
       rpy="0 0 0" />
     <parent
       link="RWrist" />
@@ -363,19 +363,19 @@
       xyz="0 1 0" />
   </joint>
   <link
-    name="RRFingerU">
+    name="RRFinger1">
     <inertial>
       <origin
-        xyz="-0.0126649206428162 -0.0013442938151873 0.0103020882956229"
+        xyz="-0.0126649206428162 -8.10090144964803E-09 0.00885223130661716"
         rpy="0 0 0" />
       <mass
         value="0.0104365547129789" />
       <inertia
         ixx="6.47820598125229E-07"
-        ixy="8.86969972178146E-13"
-        ixz="2.14754646038549E-09"
+        ixy="8.86969972156842E-13"
+        ixz="2.14754646038546E-09"
         iyy="2.69169048002805E-06"
-        iyz="1.7674815544813E-13"
+        iyz="1.76748155452918E-13"
         izz="2.84642748020542E-06" />
     </inertial>
     <visual>
@@ -384,7 +384,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RRFingerU.STL" />
+          filename="package://v1/meshes/RRFinger1.STL" />
       </geometry>
       <material
         name="">
@@ -398,37 +398,37 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RRFingerU.STL" />
+          filename="package://v1/meshes/RRFinger1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="RRKnuckleU"
+    name="RRKnuckle1"
     type="continuous">
     <origin
-      xyz="0 -0.05 0.000276794871794883"
+      xyz="0 -0.0368300000000001 0.00144985698900574"
       rpy="0 0 0" />
     <parent
       link="RPalm" />
     <child
-      link="RRFingerU" />
+      link="RRFinger1" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="RRFingerL">
+    name="RRFInger2">
     <inertial>
       <origin
-        xyz="-0.0128112396275469 -8.32667268468867E-17 0.00317500000000001"
+        xyz="-0.0128112396275469 -1.11022302462516E-16 0.00317499999999998"
         rpy="0 0 0" />
       <mass
         value="0.00367689699109764" />
       <inertia
         ixx="1.20384568003435E-07"
-        ixy="-3.41026881090469E-22"
-        ixz="1.49155300574575E-22"
+        ixy="-3.45089830252734E-22"
+        ixz="1.50632258559387E-22"
         iyy="5.13888456072003E-07"
-        iyz="-2.23758818044129E-22"
+        iyz="-2.23960766435866E-22"
         izz="6.11743769207688E-07" />
     </inertial>
     <visual>
@@ -437,7 +437,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RRFingerL.STL" />
+          filename="package://v1/meshes/RRFInger2.STL" />
       </geometry>
       <material
         name="">
@@ -451,37 +451,37 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RRFingerL.STL" />
+          filename="package://v1/meshes/RRFInger2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="RRKnuckleL"
+    name="RRKnuckle2"
     type="continuous">
     <origin
-      xyz="-0.0330199999999999 -0.00134428571428585 0.007072923076923"
+      xyz="-0.0330199999999999 0 0.00562306608791727"
       rpy="0 0 -1.5707963267949" />
     <parent
-      link="RRFingerU" />
+      link="RRFinger1" />
     <child
-      link="RRFingerL" />
+      link="RRFInger2" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="RLFingerU">
+    name="RLFinger1">
     <inertial>
       <origin
-        xyz="-0.0126649206428161 -0.00134429381518714 -0.0108645783710438"
+        xyz="-0.0126649206428162 -8.10090133862573E-09 -0.0123144353600496"
         rpy="0 0 0" />
       <mass
         value="0.0104365547129788" />
       <inertia
         ixx="6.47820598125228E-07"
-        ixy="8.86969970329839E-13"
-        ixz="2.14754646038509E-09"
+        ixy="8.86969970337357E-13"
+        ixz="2.1475464603851E-09"
         iyy="2.69169048002804E-06"
-        iyz="1.76748158358468E-13"
+        iyz="1.76748158357981E-13"
         izz="2.84642748020542E-06" />
     </inertial>
     <visual>
@@ -490,7 +490,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RLFingerU.STL" />
+          filename="package://v1/meshes/RLFinger1.STL" />
       </geometry>
       <material
         name="">
@@ -504,25 +504,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RLFingerU.STL" />
+          filename="package://v1/meshes/RLFinger1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="RLKnuckleU"
+    name="RLKnuckle1"
     type="continuous">
     <origin
-      xyz="0 -0.05 0.000276794871794883"
+      xyz="0 -0.0368300000000001 0.00144985698900574"
       rpy="0 0 0" />
     <parent
       link="RPalm" />
     <child
-      link="RLFingerU" />
+      link="RLFinger1" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="RLFingerL">
+    name="RLFinger2">
     <inertial>
       <origin
         xyz="-0.012811239627547 -8.32667268468867E-17 -0.00317499999999998"
@@ -531,10 +531,10 @@
         value="0.00367689699109764" />
       <inertia
         ixx="1.20384568003435E-07"
-        ixy="-2.82957044074303E-22"
-        ixz="4.51260046104007E-23"
+        ixy="-2.85089309437617E-22"
+        ixz="4.50793566593637E-23"
         iyy="5.13888456072003E-07"
-        iyz="-2.18912056642452E-22"
+        iyz="-2.21027086179487E-22"
         izz="6.11743769207688E-07" />
     </inertial>
     <visual>
@@ -543,7 +543,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RLFingerL.STL" />
+          filename="package://v1/meshes/RLFinger2.STL" />
       </geometry>
       <material
         name="">
@@ -557,20 +557,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RLFingerL.STL" />
+          filename="package://v1/meshes/RLFinger2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="RLKnuckleL"
+    name="RLKnuckle2"
     type="continuous">
     <origin
-      xyz="-0.0330199999999999 -0.0013442857142858 -0.00774374358974361"
+      xyz="-0.0330199999999999 0 -0.00919360057874935"
       rpy="0 0 -1.5707963267949" />
     <parent
-      link="RLFingerU" />
+      link="RLFinger1" />
     <child
-      link="RLFingerL" />
+      link="RLFinger2" />
     <axis
       xyz="0 0 1" />
   </joint>
@@ -578,16 +578,16 @@
     name="LUHumerus">
     <inertial>
       <origin
-        xyz="-0.0226637917290001 0.0229280125509593 6.52412784907241E-09"
+        xyz="-0.0226637917290001 0.0229280125509593 6.52412790458357E-09"
         rpy="0 0 0" />
       <mass
         value="0.0562874205713043" />
       <inertia
         ixx="2.5094697092515E-05"
-        ixy="3.44864962962202E-11"
-        ixz="-5.34571844102473E-13"
+        ixy="3.44864962966554E-11"
+        ixz="-5.34571844060203E-13"
         iyy="1.43324424769424E-05"
-        iyz="1.11875878173675E-11"
+        iyz="1.11875878172216E-11"
         izz="2.96716786302376E-05" />
     </inertial>
     <visual>
@@ -640,7 +640,7 @@
         ixy="4.21016703607286E-10"
         ixz="-4.1829185172669E-10"
         iyy="4.2657289532051E-05"
-        iyz="5.06938412454138E-10"
+        iyz="5.06938412453936E-10"
         izz="0.000115572862627546" />
     </inertial>
     <visual>
@@ -684,16 +684,16 @@
     name="LLHumerus">
     <inertial>
       <origin
-        xyz="2.85344389505671E-08 0.0453008545995077 -4.65570382246483E-09"
+        xyz="2.85344389228115E-08 0.0453008545995077 -4.65570382246483E-09"
         rpy="0 0 0" />
       <mass
         value="0.0924406074551832" />
       <inertia
         ixx="4.46849531177571E-05"
-        ixy="-6.06465988261484E-11"
-        ixz="9.5125969942878E-13"
+        ixy="-6.06465988253211E-11"
+        ixz="9.51259699423134E-13"
         iyy="2.73751063103821E-05"
-        iyz="1.71846938443234E-11"
+        iyz="1.71846938432535E-11"
         izz="4.75847417232105E-05" />
     </inertial>
     <visual>
@@ -743,10 +743,10 @@
         value="0.22523946527057" />
       <inertia
         ixx="0.000378632787785579"
-        ixy="6.03841587597046E-20"
-        ixz="4.37907769806552E-10"
+        ixy="6.45200622354167E-20"
+        ixz="4.37907769806526E-10"
         iyy="5.98927289877371E-05"
-        iyz="1.95159067669717E-21"
+        iyz="1.53800028193201E-21"
         izz="0.000374806664124817" />
     </inertial>
     <visual>
@@ -790,17 +790,17 @@
     name="LWrist">
     <inertial>
       <origin
-        xyz="-5.54142509656685E-10 -0.0248602017447294 0.000380585345484991"
+        xyz="-1.80499076796181E-09 -0.00813891634217762 0.000367364016287702"
         rpy="0 0 0" />
       <mass
-        value="0.0707291421737037" />
+        value="0.0217142535290293" />
       <inertia
-        ixx="3.33996262874122E-05"
-        ixy="1.02617800912574E-11"
-        ixz="5.97746341673504E-13"
-        iyy="2.90416784477261E-05"
-        iyz="9.11356668310041E-08"
-        izz="1.36590319566293E-05" />
+        ixx="7.75538309862477E-06"
+        ixy="1.02617800950492E-11"
+        ixz="5.97746345773122E-13"
+        iyy="7.35311825881286E-06"
+        iyz="-1.27624632546537E-08"
+        izz="3.22756377894864E-06" />
     </inertial>
     <visual>
       <origin
@@ -843,17 +843,17 @@
     name="LPalm">
     <inertial>
       <origin
-        xyz="4.81852129863292E-08 -0.0244339855833261 0.000379905031232308"
+        xyz="0 -0.0177536698905907 0.00010964769997629"
         rpy="0 0 0" />
       <mass
-        value="0.0719515309236498" />
+        value="0.0490148886446744" />
       <inertia
-        ixx="3.41566805408971E-05"
-        ixy="1.67722067851626E-11"
-        ixz="9.50362510965588E-13"
-        iyy="2.98417967548748E-05"
-        iyz="9.07237613733835E-08"
-        izz="1.39955427848438E-05" />
+        ixx="2.56442431887875E-05"
+        ixy="-4.17105761817786E-21"
+        ixz="-3.9685464282277E-21"
+        iyy="2.16885601889133E-05"
+        iyz="1.03898130085659E-07"
+        izz="1.04314681776806E-05" />
     </inertial>
     <visual>
       <origin
@@ -883,7 +883,7 @@
     name="LWrist2"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0 -0.0145142857142858 0.000276794871794911"
       rpy="0 0 0" />
     <parent
       link="LWrist" />
@@ -893,19 +893,19 @@
       xyz="0 1 0" />
   </joint>
   <link
-    name="LRFingerU">
+    name="LRFinger1">
     <inertial>
       <origin
-        xyz="-0.0126649206428162 -0.00134429381518708 0.0103020882956229"
+        xyz="-0.0126649206428162 -8.10090133862573E-09 0.00885223130661722"
         rpy="0 0 0" />
       <mass
         value="0.0104365547129789" />
       <inertia
         ixx="6.47820598125229E-07"
-        ixy="8.8696997016075E-13"
-        ixz="2.14754646038562E-09"
-        iyy="2.69169048002804E-06"
-        iyz="1.767481611327E-13"
+        ixy="8.86969970151394E-13"
+        ixz="2.14754646038558E-09"
+        iyy="2.69169048002805E-06"
+        iyz="1.76748161126199E-13"
         izz="2.84642748020542E-06" />
     </inertial>
     <visual>
@@ -914,7 +914,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LRFingerU.STL" />
+          filename="package://v1/meshes/LRFinger1.STL" />
       </geometry>
       <material
         name="">
@@ -928,37 +928,37 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LRFingerU.STL" />
+          filename="package://v1/meshes/LRFinger1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="LRKnuckleU"
+    name="LRKnuckle1"
     type="continuous">
     <origin
-      xyz="0 -0.05 0.000276794871794911"
+      xyz="0 -0.0368299999999999 0.00144985698900568"
       rpy="0 0 0" />
     <parent
       link="LPalm" />
     <child
-      link="LRFingerU" />
+      link="LRFinger1" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="LRFingerL">
+    name="LRFinger2">
     <inertial>
       <origin
-        xyz="-0.012811239627547 -1.11022302462516E-16 0.00317500000000001"
+        xyz="-0.012811239627547 -1.11022302462516E-16 0.00317499999999998"
         rpy="0 0 0" />
       <mass
         value="0.00367689699109764" />
       <inertia
         ixx="1.20384568003435E-07"
-        ixy="1.36169177153078E-22"
-        ixz="3.30795030962378E-22"
+        ixy="1.44620296430837E-22"
+        ixz="3.30517772664218E-22"
         iyy="5.13888456072003E-07"
-        iyz="1.59539229471891E-23"
+        iyz="1.61558713389257E-23"
         izz="6.11743769207688E-07" />
     </inertial>
     <visual>
@@ -967,7 +967,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LRFingerL.STL" />
+          filename="package://v1/meshes/LRFinger2.STL" />
       </geometry>
       <material
         name="">
@@ -981,25 +981,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LRFingerL.STL" />
+          filename="package://v1/meshes/LRFinger2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="LRKnuckleL"
+    name="LRKnuckle2"
     type="continuous">
     <origin
-      xyz="-0.03302 -0.00134428571428574 0.00707292307692295"
+      xyz="-0.03302 0 0.00562306608791727"
       rpy="0 0 -1.5707963267949" />
     <parent
-      link="LRFingerU" />
+      link="LRFinger1" />
     <child
-      link="LRFingerL" />
+      link="LRFinger2" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="LLFingerU">
+    name="LLFinger1">
     <inertial>
       <origin
         xyz="-0.0126649206428162 -8.10090144964803E-09 -0.0123144353600494"
@@ -1008,11 +1008,11 @@
         value="0.0104365547129789" />
       <inertia
         ixx="6.47820598125232E-07"
-        ixy="8.86969969544327E-13"
-        ixz="2.14754646038651E-09"
+        ixy="8.86969969541433E-13"
+        ixz="2.14754646038654E-09"
         iyy="2.69169048002805E-06"
-        iyz="1.7674815805398E-13"
-        izz="2.84642748020543E-06" />
+        iyz="1.76748158053941E-13"
+        izz="2.84642748020542E-06" />
     </inertial>
     <visual>
       <origin
@@ -1020,7 +1020,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LLFingerU.STL" />
+          filename="package://v1/meshes/LLFinger1.STL" />
       </geometry>
       <material
         name="">
@@ -1034,37 +1034,37 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LLFingerU.STL" />
+          filename="package://v1/meshes/LLFinger1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="LLKnuckleU"
+    name="LLKnuckle1"
     type="continuous">
     <origin
-      xyz="0 -0.0513442857142857 0.00172665186080059"
+      xyz="0 -0.0368299999999999 0.00144985698900568"
       rpy="0 0 0" />
     <parent
       link="LPalm" />
     <child
-      link="LLFingerU" />
+      link="LLFinger1" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="LLFingerL">
+    name="LLFinger2">
     <inertial>
       <origin
-        xyz="-0.0128112396275469 -2.77555756156289E-17 -0.00317499999999998"
+        xyz="-0.0128112396275469 -2.77555756156289E-17 -0.00317500000000001"
         rpy="0 0 0" />
       <mass
         value="0.00367689699109764" />
       <inertia
         ixx="1.20384568003434E-07"
-        ixy="2.58039647270358E-23"
-        ixz="3.34505006134411E-22"
+        ixy="2.44656358913032E-23"
+        ixz="3.33118714643611E-22"
         iyy="5.13888456072002E-07"
-        iyz="3.49370717704287E-23"
+        iyz="3.53409685539018E-23"
         izz="6.11743769207687E-07" />
     </inertial>
     <visual>
@@ -1073,7 +1073,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LLFingerL.STL" />
+          filename="package://v1/meshes/LLFinger2.STL" />
       </geometry>
       <material
         name="">
@@ -1087,20 +1087,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LLFingerL.STL" />
+          filename="package://v1/meshes/LLFinger2.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="LLKnuckleL"
+    name="LLKnuckle2"
     type="continuous">
     <origin
       xyz="-0.03302 0 -0.00919360057874935"
       rpy="0 0 -1.5707963267949" />
     <parent
-      link="LLFingerU" />
+      link="LLFinger1" />
     <child
-      link="LLFingerL" />
+      link="LLFinger2" />
     <axis
       xyz="0 0 1" />
   </joint>
@@ -1115,9 +1115,9 @@
       <inertia
         ixx="2.59185386877438E-05"
         ixy="-3.22027306679004E-11"
-        ixz="-2.55770327002761E-13"
+        ixz="-2.55770327008246E-13"
         iyy="1.48051965700891E-05"
-        iyz="1.08782811970564E-11"
+        iyz="1.08782811971348E-11"
         izz="3.04715194779055E-05" />
     </inertial>
     <visual>
@@ -1167,10 +1167,10 @@
         value="0.123790820508356" />
       <inertia
         ixx="9.43360851552635E-05"
-        ixy="4.47557249328389E-10"
-        ixz="-4.30316018921808E-10"
+        ixy="4.4755724932845E-10"
+        ixz="-4.30316018922221E-10"
         iyy="3.76217790275506E-05"
-        iyz="4.80012269198868E-10"
+        iyz="4.80012269198859E-10"
         izz="9.05552888747606E-05" />
     </inertial>
     <visual>
@@ -1220,10 +1220,10 @@
         value="0.0813765868175624" />
       <inertia
         ixx="3.40076294026606E-05"
-        ixy="3.59041395209103E-11"
-        ixz="5.5323091695553E-13"
+        ixy="3.5904139520962E-11"
+        ixz="5.5323091654194E-13"
         iyy="2.49568185639496E-05"
-        iyz="9.99145356402482E-12"
+        iyz="9.99145356174777E-12"
         izz="3.68818332146124E-05" />
     </inertial>
     <visual>
@@ -1267,16 +1267,16 @@
     name="RTibia">
     <inertial>
       <origin
-        xyz="-2.77555756156289E-17 -0.0730923109520521 2.08166817117217E-17"
+        xyz="-2.77555756156289E-17 -0.0686637395234806 3.46944695195361E-17"
         rpy="0 0 0" />
       <mass
         value="0.197322267255763" />
       <inertia
         ixx="0.000264988132785359"
-        ixy="-7.44462447756068E-21"
-        ixz="3.73134589260056E-10"
+        ixy="-6.38479940401183E-21"
+        ixz="3.73134589259823E-10"
         iyy="5.20314065854431E-05"
-        iyz="8.89736109598491E-20"
+        iyz="8.87913273466858E-20"
         izz="0.000261642260704143" />
     </inertial>
     <visual>
@@ -1307,7 +1307,7 @@
     name="RKnee2"
     type="continuous">
     <origin
-      xyz="0 -0.05 0"
+      xyz="0 -0.0544285714285715 0"
       rpy="0 0 0" />
     <parent
       link="RLFemur" />
@@ -1317,19 +1317,19 @@
       xyz="1 0 0" />
   </joint>
   <link
-    name="RFoot">
+    name="RHeel">
     <inertial>
       <origin
-        xyz="0.00431987000828584 9.92670223798342E-10 3.92065171994638E-10"
+        xyz="0.00431987000828584 9.92670168287191E-10 3.92065185872426E-10"
         rpy="0 0 0" />
       <mass
         value="0.0576266868508424" />
       <inertia
         ixx="1.05875547592147E-05"
-        ixy="3.92037871857128E-13"
-        ixz="2.64833411768294E-12"
+        ixy="3.92037871760529E-13"
+        ixz="2.64833411785163E-12"
         iyy="6.33611195243211E-05"
-        iyz="5.37963402669114E-13"
+        iyz="5.37963402617415E-13"
         izz="5.7440843831984E-05" />
     </inertial>
     <visual>
@@ -1338,7 +1338,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RFoot.STL" />
+          filename="package://v1/meshes/RHeel.STL" />
       </geometry>
       <material
         name="">
@@ -1352,7 +1352,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/RFoot.STL" />
+          filename="package://v1/meshes/RHeel.STL" />
       </geometry>
     </collision>
   </link>
@@ -1360,12 +1360,12 @@
     name="RAnkle"
     type="continuous">
     <origin
-      xyz="0 -0.141756043956044 0"
+      xyz="0 -0.137327472527473 0"
       rpy="3.14159265358979 -1.5707963267949 0" />
     <parent
       link="RTibia" />
     <child
-      link="RFoot" />
+      link="RHeel" />
     <axis
       xyz="0 0 1" />
   </joint>
@@ -1373,16 +1373,16 @@
     name="RToe">
     <inertial>
       <origin
-        xyz="0.0152672312202715 -9.9670521835904E-09 4.41560903674532E-08"
+        xyz="0.0152672312202715 -9.9670521835904E-09 4.41560903813309E-08"
         rpy="0 0 0" />
       <mass
         value="0.0300993648154242" />
       <inertia
         ixx="8.31457715533237E-06"
-        ixy="-3.97612203000878E-12"
-        ixz="-8.97804618198221E-12"
+        ixy="-3.97612203000633E-12"
+        ixz="-8.97804618171271E-12"
         iyy="1.03832181900341E-05"
-        iyz="8.67998305857423E-12"
+        iyz="8.67998305855484E-12"
         izz="4.34415013200784E-06" />
     </inertial>
     <visual>
@@ -1416,7 +1416,7 @@
       xyz="0.05000625 0 0"
       rpy="0 0 0" />
     <parent
-      link="RFoot" />
+      link="RHeel" />
     <child
       link="RToe" />
     <axis
@@ -1431,11 +1431,11 @@
       <mass
         value="0.0588371608328871" />
       <inertia
-        ixx="2.59185386877439E-05"
-        ixy="3.22027308337893E-11"
-        ixz="3.23615027751085E-13"
+        ixx="2.59185386877438E-05"
+        ixy="3.22027308335256E-11"
+        ixz="3.23615027751084E-13"
         iyy="1.48051965700891E-05"
-        iyz="1.08782807088048E-11"
+        iyz="1.08782807087764E-11"
         izz="3.04715194779055E-05" />
     </inertial>
     <visual>
@@ -1485,8 +1485,8 @@
         value="0.123790820508356" />
       <inertia
         ixx="9.43360851552635E-05"
-        ixy="4.47557249344335E-10"
-        ixz="-4.30316018919429E-10"
+        ixy="4.47557249344378E-10"
+        ixz="-4.30316018919016E-10"
         iyy="3.76217790275506E-05"
         iyz="4.80012269184774E-10"
         izz="9.05552888747607E-05" />
@@ -1539,9 +1539,9 @@
       <inertia
         ixx="3.40076294026605E-05"
         ixy="3.59041395159758E-11"
-        ixz="5.532309170911E-13"
+        ixz="5.5323091750469E-13"
         iyy="2.49568185639496E-05"
-        iyz="9.99145356393342E-12"
+        iyz="9.99145356632214E-12"
         izz="3.68818332146123E-05" />
     </inertial>
     <visual>
@@ -1585,7 +1585,7 @@
     name="LTibia">
     <inertial>
       <origin
-        xyz="-1.67713967713645E-10 -0.0721566095737869 -0.0116580279261786"
+        xyz="-1.57552387802795E-10 -0.0677847311179164 -0.0109516826387621"
         rpy="0 0 0" />
       <mass
         value="0.197322267255763" />
@@ -1625,7 +1625,7 @@
     name="LKnee2"
     type="continuous">
     <origin
-      xyz="0 -0.05 0"
+      xyz="0 -0.0544285714285714 0"
       rpy="-0.160181436409911 0 0" />
     <parent
       link="LLFemur" />
@@ -1635,7 +1635,7 @@
       xyz="1 0 0" />
   </joint>
   <link
-    name="LFoot">
+    name="LHeel">
     <inertial>
       <origin
         xyz="0.00431987000828584 9.92670168287191E-10 3.9206515811685E-10"
@@ -1644,8 +1644,8 @@
         value="0.0576266868508424" />
       <inertia
         ixx="1.05875547592147E-05"
-        ixy="3.92037871432126E-13"
-        ixz="2.6483341190867E-12"
+        ixy="3.92037871238927E-13"
+        ixz="2.64833411878742E-12"
         iyy="6.33611195243211E-05"
         iyz="5.37963403386106E-13"
         izz="5.7440843831984E-05" />
@@ -1656,7 +1656,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LFoot.STL" />
+          filename="package://v1/meshes/LHeel.STL" />
       </geometry>
       <material
         name="">
@@ -1670,7 +1670,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://v1/meshes/LFoot.STL" />
+          filename="package://v1/meshes/LHeel.STL" />
       </geometry>
     </collision>
   </link>
@@ -1678,12 +1678,12 @@
     name="LAnkle"
     type="continuous">
     <origin
-      xyz="0 -0.139941334255675 -0.0226097095250998"
+      xyz="0 -0.135569455799804 -0.0219033642376833"
       rpy="1.57079623659819 -1.41061489038498 -1.57079623775286" />
     <parent
       link="LTibia" />
     <child
-      link="LFoot" />
+      link="LHeel" />
     <axis
       xyz="0 0 1" />
   </joint>
@@ -1691,14 +1691,14 @@
     name="LToe">
     <inertial>
       <origin
-        xyz="0.0152672312202716 -9.96705223910155E-09 4.41560903535754E-08"
+        xyz="0.0152672312202715 -9.96705223910155E-09 4.41560903535754E-08"
         rpy="0 0 0" />
       <mass
         value="0.0300993648154242" />
       <inertia
         ixx="8.31457715533236E-06"
-        ixy="-3.97612203111906E-12"
-        ixz="-8.97804618062952E-12"
+        ixy="-3.97612203112545E-12"
+        ixz="-8.97804618066915E-12"
         iyy="1.03832181900341E-05"
         iyz="8.67998305410331E-12"
         izz="4.34415013200783E-06" />
@@ -1734,7 +1734,7 @@
       xyz="0.05000625 0 0"
       rpy="0 0 0" />
     <parent
-      link="LFoot" />
+      link="LHeel" />
     <child
       link="LToe" />
     <axis
